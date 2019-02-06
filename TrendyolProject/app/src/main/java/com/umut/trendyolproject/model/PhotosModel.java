@@ -1,11 +1,8 @@
 package com.umut.trendyolproject.model;
 
-import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
-
-public class ContentModel
+public class PhotosModel
 {
     @SerializedName("id")
     public  int id;
@@ -25,9 +22,14 @@ public class ContentModel
     @SerializedName("title")
     public  String title;
 
-    @SerializedName("photo")
-    @Expose
-    public List<PhotoUrlModel> url;
+    @SerializedName("ispublic")
+    public  String ispublic;
+
+    @SerializedName("isfriend")
+    public  String isfriend;
+
+    @SerializedName("isfamily")
+    public  String isfamily;
 
     public  int getId()
     {
@@ -59,16 +61,6 @@ public class ContentModel
         return title;
     }
 
-    public List<PhotoUrlModel> getUrl()
-    {
-        return url;
-    }
-
-    public void setUrl(List<PhotoUrlModel> url)
-    {
-        this.url = url;
-    }
-
     public  void setFarm(String farm)
     {
         this.farm = farm;
@@ -97,5 +89,35 @@ public class ContentModel
     public void setTitle(String title)
     {
         this.title = title;
+    }
+
+    public String getIspublic()
+    {
+        return ispublic;
+    }
+
+    public String getIsfamily()
+    {
+        return isfamily;
+    }
+
+    public String getIsfriend()
+    {
+        return isfriend;
+    }
+
+    public void setIsfamily(String isfamily)
+    {
+        this.isfamily = isfamily;
+    }
+
+    public void setIsfriend(String isfriend)
+    {
+        this.isfriend = isfriend;
+    }
+
+    public void setIspublic(String ispublic)
+    {
+        this.ispublic = ispublic;
     }
 }
