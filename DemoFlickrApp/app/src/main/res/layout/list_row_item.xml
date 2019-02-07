@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/tools"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="2dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="170dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:background="@color/thirtyPercentDark"
+            android:text="Flickr app demo galery photo title......"
+            android:textColor="#FFFFFF"
+            android:gravity="left"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/thirtyPercentDark"
+    >
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="16dp"
+                android:id="@+id/userProfileIcon"
+                android:src="@color/warm_grey2"
+                app:civ_border_width="0.8dp"
+                app:civ_border_color="#FFFFFF"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/userProfileIcon"
+                  android:layout_marginTop="10dp"
+                  android:text="Flickr User"
+                  android:textSize="14dp"
+                  android:textStyle="bold"
+                  android:id="@+id/ownerTxt"
+                  android:textColor="#FFFFFF"
+
+        />
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/userProfileIcon"
+                  android:text="Featured"
+                  android:textSize="12dp"
+                  android:textStyle="bold"
+                  android:layout_below="@+id/ownerTxt"
+                  android:textColor="#EBEBEB"
+
+        />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
