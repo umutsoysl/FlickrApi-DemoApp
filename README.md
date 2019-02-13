@@ -1,7 +1,7 @@
 # FlickrApi-DemoApp
 Android app demonstrating access to Flickr API and display of user data
 
-![Phone UI](ScreenShot/2.png)
+![Phone UI](ScreenShot/2.png=250x500)
 
 Introduction
 ------------
