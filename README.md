@@ -1,6 +1,8 @@
 # FlickrApi-DemoApp
 Android app demonstrating access to Flickr API and display of user data
 
+![Phone UI](ScreenShot/2.png)
+
 Introduction
 ------------
 FlickrDemo is an example Android app demonstrating a few technologies together:
